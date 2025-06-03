@@ -44,13 +44,11 @@ function generateSquares(size){
     
         squarecontainer.appendChild(square);
     
-        square.addEventListener("mouseover", () => {
+        square.addEventListener("mouseover", (event) => {
             square.style.background = "blue"
         })
     
-        square.addEventListener("mouseout", () => {
-            square.style.background = "red"
-        })
+        
     
         squares[i] = square;
     };
